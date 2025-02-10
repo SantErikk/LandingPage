@@ -1,7 +1,7 @@
 import Container from "../Container"
 export default function SoluctionSection() {
     return (
-        <section className="solutions-container">
+        <section id="solucoes" className="solutions-container">
       <h2>Conheça <strong>nossas soluções</strong>
       </h2>
       <div className="cards">

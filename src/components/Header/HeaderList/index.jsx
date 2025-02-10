@@ -8,7 +8,9 @@ export default function HeaderList() {
                 <HeaderItem href={"#beneficios"} text={"Benefícios"} />
                 <HeaderItem href={"#solucoes"} text={"Soluções"} />
                 <HeaderItem href={"#economizar"} text={"Economia"} />
-                <HeaderItem href={"contato"} text={"Entre em contato"} />
+                <HeaderItem href={"#contact-form"} text={"Entre em contato"} />
+
+
             </ul>
         </div>
     );
