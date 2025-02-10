@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937; 
+    line-height: 1.6;
+  }
+  
+header {
+    background-color: #1e40af; 
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center; 
+    clip-path: polygon(100% 0, 100% 88%, 89% 91%, 75% 93%, 61% 95%, 46% 96%, 34% 97%, 16% 98%, 0 99%, 0 0);
+    position: relative; 
+}
+
+#consultation-button {
+  position: absolute;
+  bottom: 20%; 
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.consultation-button:hover {
+  background-color: #0056b3;
+}
+
+#consultation-button:hover {
+    background-color: #0056b3; 
+}
+
+  
+  header .header-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  header .header-content ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  header .header-content ul li a:hover {
+    color: #93c5fd;
+  }
+  
+  .text-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+  }
+
+  .text-topo h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-topo p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  section {
+    padding: 40px 20px;
+  }
+  
+  section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #1e3a8a; 
+  }
+  
+  .boxcards-sobre, .boxcards-faturar, .boxes-economizar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .card-sobre,.card-faturar, .box-economizar {
+    background-color: #e5e7eb; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card-sobre:hover,
+  .card-faturar:hover, .box-economizar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-faturar h4, .box-economizar h4 {
+    color: #1d4ed8; 
+    margin-bottom: 10px;
+  }
+  
+  .card-faturar p, .box-economizar p {
+    color: #374151; 
+  }
+  
+  .motivos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    gap: 20px; 
+  }
+  
+  .motivo-lista {
+    background-color: #f9fafb; 
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 500px; 
+  }
+  
+  .motivo-lista strong {
+    font-size: 2rem;
+    color: #2563eb; 
+  }
+  
+  .motivo-lista span {
+    color: #1f2937; 
+  }
+  .solutions-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .solutions-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .solutions-container h2 strong {
+    color: #2563eb; 
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Garante que funcione em telas menores */
+  }
+  
+  .card {
+    background-color: #f9fafb; /* Cinza claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #1f2937; 
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    color: #4b5563; 
+    margin-bottom: 20px;
+  }
+  
+  .card button {
+    background-color: #2563eb; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #1e40af; 
+  }
+
+  .data-security {
+    text-align: center;
+    padding: 40px;
+    color: white;
+    background-color: black; 
+  }
+  
+  .data-security h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .data-security p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ccc; 
+  }
+
+  .contact-form {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-form h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .contact-form p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .form-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Mais arredondado */
+    background: #f9f9f9;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Mais arredondado */
+    background: #f9f9f9;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 15px; /* Mais arredondado */
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .footer {
+    background-color: #f8f9fa; 
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    border-top: 1px solid #e9ecef; /* Linha superior */
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+  }
+  
+  .footer p {
+    margin: 5px 0; /* Margem entre os parágrafos */
+    color: #6c757d; 
+  }
+  
+  .footer-links {
+    display: inline-block; /* Exibe os links em linha */
+  }
+  
+  button {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    color: #007bff; 
+    cursor: pointer; /* Cursor de ponteiro */
+    margin: 0 5px; /* Margem entre os botões */
+  }
+  
+  .modal-content {
+    position: relative; /* Para posicionar o botão de fechar */
+    padding: 20px;
+    border-radius: 8px;
+    background: white; /* Fundo branco */
+    max-width: 500px; /* Largura máxima do modal */
+    margin: auto; /* Centraliza o modal */
+    top: 0px
+  }
+
+  @media (max-width: 1200px) {
+    .boxcards-sobre, .boxcards-faturar, .boxes-economizar {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    }
+  
+    .card-sobre, .card-faturar, .box-economizar {
+      padding: 15px; 
+    }
+  
+    .card {
+      width: 270px; 
+    }
+  
+    .solutions-container h2 {
+      font-size: 1.8rem; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+   
+    header {
+      padding: 10px 0; 
+    }
+  
+    .text-topo {
+      height: auto;
+    }
+  
+    .text-topo h1 {
+      font-size: 1.6rem; 
+    }
+  
+    .text-topo p {
+      font-size: 0.9rem; 
+    }
+  
+    .motivos {
+      height: auto; 
+      padding: 20px; 
+    }
+  
+    .form-group {
+      flex-direction: column; 
+    }
+  
+    .form-group input {
+      flex: 1 1 100%; 
+    }
+  
+    textarea {
+      width: 100%; 
+    }
+  
+    .cards {
+      flex-direction: column; 
+    }
+  
+    .card {
+      width: 100%; 
+      padding: 15px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      padding: 5px 0; 
+    }
+    .text-topo h1 {
+      font-size: 1.4rem; 
+    }
+  
+    .text-topo p {
+      font-size: 0.8rem; 
+    }
+  
+    .solutions-container h2 {
+      font-size: 1.6rem; 
+    }
+  
+    .motivo-lista {
+      padding: 15px; 
+      font-size: 0.9rem; 
+    }
+  
+    .card {
+      width: 100%; 
+      padding: 10px; 
+    }
+  
+    .footer p {
+      font-size: 0.9rem; 
+    }
+  
+    .modal-content {
+      width: 90%; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .consultation-button {
+        bottom: 5% !important; /* Ajuste para mobile */
+        font-size: 0.85rem; /* Fonte menor para dispositivos móveis */
+        padding: 8px 16px; /* Ajuste o padding no mobile */
+    }
+  }
+
+
+  @media (max-width: 678px) {
+    #consultation-button {
+      position: static; /* Remove a posição absoluta */
+      margin: 30px auto 30px 10px; /* Adiciona margem para mover o botão para a direita */
+      display: block; /* Exibe o botão em bloco */
+      width: 80%; /* Ajusta a largura */
+      padding: 15px;
+      font-size: 1rem;
+      bottom: auto; /* Remove o valor de bottom */
+      margin-left: 50%; /* Alinha à direita */
+      margin-right: 10%; /* Garante que o botão fique à direita */
+    }
+  }
+  @media (max-width: 410x) {
+    #consultation-button {
+      position: static; /* Remove a posição absoluta */
+      margin: 30px auto; /* Adiciona margem para afastar */
+      display: block; /* Exibe o botão em bloco */
+      width: 100%; /* Faz o botão ocupar toda a largura disponível */
+      padding: 15px;
+      font-size: 1rem;
+      bottom: auto; /* Remove o valor de bottom */
+      margin-left: 0; /* Remove qualquer margem à esquerda */
+      margin-right: 0; /* Remove qualquer margem à direita */
+    }
+  }
+  @media (max-width: 375px) {
+    /* Garantir que o header ocupe toda a largura da tela */
+    header {
+      width: 100%; /* Ocupa toda a largura */
+      padding: 0;  /* Remove o padding */
+      box-sizing: border-box; /* Inclui o padding na largura */
+      overflow: hidden; /* Evita que o conteúdo saia da tela */
+    }
+  
+    /* Ajustar o conteúdo do header (centro) */
+    .header-content {
+      width: 100%;  /* Faz a header-content ocupar toda a largura */
+      display: flex;
+      justify-content: center; /* Centraliza a ul */
+      padding: 0;
+      text-align: center;
+    }
+  
+    /* Ajustes na lista (ul) */
+    header .header-content ul {
+      display: flex;
+      justify-content: center; /* Centraliza os itens da lista */
+      gap: 10px; /* Ajuste para não ficar muito espaçado */
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      width: 100%; /* Faz com que a lista ocupe toda a largura disponível */
+      box-sizing: border-box; /* Inclui o padding na largura */
+    }
+  }
+  @media (max-width: 320px) {
+    /* Ajustes no header */
+    header {
+      width: 100%; /* Ocupa toda a largura da tela */
+      padding: 0;
+      box-sizing: border-box;
+      overflow: hidden; /* Impede transbordamento horizontal */
+    }
+  
+    /* Ajustes no conteúdo do header */
+    .header-content {
+      display: flex;
+      justify-content: center; /* Centraliza a lista */
+      padding: 0;
+      text-align: center;
+      width: 100%;
+    }
+  
+    /* Ajustes na lista (ul) */
+    header .header-content ul {
+      display: flex;
+      justify-content: space-around; 
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      width: 100%; /* A lista ocupa toda a largura */
+      box-sizing: border-box;
+      overflow-x: auto; 
+      flex-wrap: nowrap; /* Impede quebra de linha */
+    }
+  
+    /* Ajustes nos itens da lista (li) */
+    header .header-content ul li {
+      flex: 0 0 auto; /* Impede os itens de se esticarem */
+      text-align: center;
+    }
+  }  
