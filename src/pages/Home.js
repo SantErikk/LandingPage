@@ -1,16 +1,15 @@
-import './App.css';
-import Modal from 'react-modal'
-import BeneficiosSection from './components/BeneficiosSection';
-import EconomizarSection from './components/EconomizarSection';
-import FaturarSection from './components/FaturarSection';
-import Header from './components/Header';
-import SobreSection from './components/SobreSection';
-import Container from './components/Container';
-import SoluctionSection from './components/SolucaoSection';
-import DataSecuritySection from './components/DataSecuritySection';
-import ContatoForm from './components/ContatoSection';
-import FooterSection from './components/Footersection';
-function App() {
+import Container from '../components/Container';
+import Header from '../components/Header';
+import SobreSection from '../components/SobreSection';
+import FaturarSection from '../components/FaturarSection';
+import EconomizarSection from '../components/EconomizarSection';
+import BeneficiosSection from '../components/BeneficiosSection';
+import SolucaoSection from '../components/SolucaoSection';
+import DataSecuritySection from '../components/DataSecuritySection';
+import ContatoForm from '../components/ContatoSection';
+import FooterSection from '../components/Footersection';
+
+function Home() {
   return (
     <Container>
       <Header />
@@ -19,12 +18,13 @@ function App() {
         <FaturarSection />
         <EconomizarSection />
         <BeneficiosSection />
-        <SoluctionSection />
+        <SolucaoSection />
         <DataSecuritySection />
         <ContatoForm />    
         <FooterSection />   
-        <Modal />
       </main>
     </Container>
   );
 }
+
+export default Home;

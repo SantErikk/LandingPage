@@ -1,4 +1,3 @@
-import Container from "../Container";
 export default function DataSecuritySection(){
 
 return (
